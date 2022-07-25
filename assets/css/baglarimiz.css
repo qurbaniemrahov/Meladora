@@ -1,0 +1,24 @@
+.header {
+    background-color: #1a5221;
+    color: #fff;
+    position: fixed;
+   display: none;
+   z-index: 3;
+   border-bottom: 1px solid yellow;
+   
+  
+  }
+  
+  .header a {
+    color: #fff;
+  }
+  
+  .header a:hover {
+    color: yellow;
+    border-bottom: 1px solid yellow;
+    transition: all ease 0.4s;
+  }
+
+  .navbar-second i {
+    color: black;
+  }
