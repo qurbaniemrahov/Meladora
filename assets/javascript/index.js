@@ -20,11 +20,12 @@ const secondLine = document.querySelector(".navbar-second")
 
 document.addEventListener("scroll", (e) => {
     if (document.documentElement.scrollTop >= 30) {
-  // firstLine.style.display = "none"
-  // secondLine.style.display = "block"
+ 
+ 
   secondLine.classList.add("navbar-fixed")
     }else{
       secondLine.classList.remove("navbar-fixed")
+    
     }
 })
 

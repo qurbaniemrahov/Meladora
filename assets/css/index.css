@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
 .header {
   background-color: #1a5221;
   color: #fff;
@@ -5,7 +15,7 @@
  display: none;
  z-index: 3;
  border-bottom: 1px solid yellow;
- 
+ overflow-x: hidden;
 
 }
 
@@ -39,7 +49,7 @@
 /* navbar */
 #navbar {
   width: 100%;
-  height: 90px;
+
   display: flex;
   flex-direction: column;
 
@@ -84,6 +94,7 @@ input.active {
   justify-content: space-between;
   align-items: center;
   font-family: 'Edu NSW ACT Foundation', cursive;
+  
 }
 .navbar-fixed{
   background-color: green;
@@ -138,14 +149,15 @@ body {
 
 .swiper {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  overflow-x: hidden;
 }
 
 .mySwiper {
   width: 100%;
   height: 200px;
   margin-bottom: 40px;
-  margin-top: -100px;
+ 
   display: flex;
   flex-wrap: wrap;
 }
