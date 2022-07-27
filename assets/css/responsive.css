@@ -19,6 +19,10 @@
     
 }
 
+#navbar {
+    width: 100%;
+}
+
 
 
 .box-first {
@@ -54,7 +58,7 @@
 }
 
 .header {
-    width: 70%;
+ 
     overflow: hidden;
     margin: 0;
     padding: 0;

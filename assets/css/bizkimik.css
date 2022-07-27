@@ -1,46 +1,67 @@
-.banner {
-    width: 100%;
-    height: 70vh;
-    background-image: url("../img/bizkimik/biiz-background.png");
-    background-size: cover;
+  .banner {
+      width: 100%;
+      height: 70vh;
+      background-image: url("../img/bizkimik/biiz-background.png");
+      background-size: cover;
+      object-fit: cover;
+      background-repeat: no-repeat;
+  
+       background-position: center;
+     
+    }
+
+    /* .banner:after{
+      content: '';
+      background: rgba(0,0,0,0.6);
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    } */
+
+
+  .navbar-first a {
+      color:#fff;
+    } 
+
+    /* .navbar-second a {
+      color: black;
+    }
+
+    .navbar-first {
+    
+      border-bottom: 1px solid black;
+    }
+
+    .overlay {
+      position: absolute;
+      right: 50px;
+      bottom: -100px;
+    } */
+
+    /* about */
+    /* .about-items-image {
+      width: 100%;
+      height:100%;
     object-fit: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    /* background-position: center;
-    position: relative; */
-  }
+    background-size: cover;
+    background-attachment: fixed;
+    } */
 
-.navbar-first a {
-    color:black;
-  }
+    
+    /* about */
 
-  .navbar-second a {
+  /* .navbar-second i {
     color: black;
-  }
+  }  */
 
-  .navbar-first {
-   
-    border-bottom: 1px solid black;
-  }
-
-  .overlay {
-    position: absolute;
-    right: 50px;
-    bottom: -100px;
-  }
-
-  /* about */
   .about-items-image {
     width: 100%;
-    height:100%;
-   object-fit: cover;
-   background-size: cover;
-   background-attachment: fixed;
-  }
-
+    height: auto;
+    display: flex;
+    justify-content: center;
   
-  /* about */
-
-.navbar-second i {
-  color: black;
-}
+  }

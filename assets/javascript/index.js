@@ -13,16 +13,18 @@ empty.addEventListener("click", () => {
 // search
 
 // scrolling header
-let header = document.querySelector(".header");
 const navbar = document.querySelector("#navbar")
+const firstLine = document.querySelector(".navbar-first")
+const secondLine = document.querySelector(".navbar-second")
+
 
 document.addEventListener("scroll", (e) => {
-    if (document.documentElement.scrollTop >= 100) {
-    header.style.display = "block"
-    navbar.style.display = "none"
-    }else {
-    header.style.display = "none"
-    navbar.style.display = "block"
+    if (document.documentElement.scrollTop >= 30) {
+  // firstLine.style.display = "none"
+  // secondLine.style.display = "block"
+  secondLine.classList.add("navbar-fixed")
+    }else{
+      secondLine.classList.remove("navbar-fixed")
     }
 })
 
@@ -42,6 +44,20 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    200: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -50,6 +66,7 @@ var swiper = new Swiper(".mySwiper", {
     delay: 2500,
     disableOnInteraction: false,
   },
+
 });
 // box
 
