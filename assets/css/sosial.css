@@ -1,0 +1,8 @@
+.social {
+    width: 100%;
+}
+
+.social img {
+    width: 100%;
+    object-fit: cover;
+}
